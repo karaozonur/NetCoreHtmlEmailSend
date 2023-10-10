@@ -1,0 +1,17 @@
+﻿@model NetCoreHtmlEmailSend.Models.ViewModels
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form method="post" asp-controller="home" asp-action="Index">
+    <div class="row">
+        
+        <div class="col-12">
+            @Html.TextBoxFor(m=>m.formshtml.Email,new{id="Email"})
+        </div>
+        <div class="col-12">
+            <button type="submit" asp-controller="home" asp-action="Index" class="btn btn-dark">buraya tıkla</button>
+        </div>
+    </div>
+
+</form>
